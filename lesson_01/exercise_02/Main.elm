@@ -23,11 +23,12 @@ elmHubHeader =
 main =
     div [ class "content" ]
         [ -- TODO see line 26 below
-          text "TODO put the contents of elmHubHeader here instead of this text!"
+        --   text "TODO put the contents of elmHubHeader here instead of this text!"
+          elmHubHeader
         , ul [ class "results" ]
             [ li []
                 [ span [ class "star-count" ]
-                    [-- TODO Display the number of stars here.
+                    [ (model.result.stars)-- TODO Display the number of stars here.
                      -- HINT: You'll need some parentheses to do this!
                     ]
 
